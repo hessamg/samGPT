@@ -1,7 +1,7 @@
 import gradio as gr
 from langchain_ollama import OllamaLLM
 
-# Initialize Ollama
+# Initialize the model
 llm = OllamaLLM(model="SamGanjian")
 
 def generate_response(message, history):
@@ -70,7 +70,7 @@ with gr.Blocks(title="Sam Ganjian AI Assistant", css=css, theme=gr.themes.Soft()
         """
         # 🤖 Sam Ganjian AI
         Welcome! I'm an AI assistant trained to give you general information about Sam Ganjian and also help you with various tasks. Feel free to ask me about Sam or anything!
-        """,
+        """
     )
 
     with gr.Row():
@@ -115,8 +115,8 @@ with gr.Blocks(title="Sam Ganjian AI Assistant", css=css, theme=gr.themes.Soft()
 
                 ### Creator
                 Built by Sam Ganjian
-                [LinkedIn](https://www.linkedin.com/in/your-profile) |
-                [GitHub](https://github.com/your-profile)
+                [LinkedIn](https://www.linkedin.com/in/samganjian) |
+                [GitHub](https://github.com/hessamg)
                 """
             )
 
